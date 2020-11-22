@@ -11,7 +11,7 @@
     <title>Hello, world!</title>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
     <a class="navbar-brand" href="index.html">WebStore</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -22,8 +22,8 @@
             <li class="nav-item">
                 <a class="nav-link" href="about.html">About</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="cart.html">Cart</a>
+            <li class="nav-item active">
+                <a class="nav-link" href="cart.html">Cart <span id="cartCount" class="badge badge-light">5</span></a>
             </li>
         </ul>
     </div>
@@ -43,8 +43,8 @@
                     <th scope="col">TOTAL PRICE</th>
                 </tr>
                 </thead>
-                <tbody>
-                <tr>
+                <tbody id="cartTableBody">
+                <!--<tr>
                     <th scope="row">1</th>
                     <td>
                         <img width="60px" class="img-thumbnail" src="https://www.vineyardvines.com/dw/image/v2/AAHW_PRD/on/demandware.static/-/Sites-vineyardvines-master/default/dw8294d4d0/images/2020/3K001154_252_LD_F.jpg?sw=102&sh=190&sm=cut" alt="">
@@ -54,51 +54,58 @@
                         <p ><span class="font-weight-bold">Color:</span> <span>Red</span> | <span class="font-weight-bold">Size: </span><span>SSL</span></p>
                     </td>
                     <td class="text-center">
-                        <button class="btn">-</button>
-                        <input min="0" type="number" class="" style="width: 50px">
-                        <button class="btn">+</button>
-                        <p class="font-weight-bold">@ GHC 590</p>
+                        <button class="btn">&dArr;</button>
+                        <label for=""></label>
+                        <input id="" min="0" type="number" class="" style="width: 50px">
+                        <button class="btn">&uArr;</button>
+                        <p class="font-weight-bold">@ GH&#x20B5; 590</p>
                     </td>
 
-                    <td><h5>GHC 450</h5></td>
-                </tr>
+                    <td><h5>GH&#x20B5; 450</h5></td>
+                </tr>-->
 
                 </tbody>
             </table>
         </div>
 
         <div class="col col-md-4">
-            <div class="card">
-                <div class="card-header">
+            <div class="card sticky-top shadow position-sticky">
+                <div class="card-header bg-primary text-white">
                     <h5>Order Total</h5>
-                    <p class="p-0 m-0"><span id="totalItemsInCart">7</span>items Total</p>
+                    <p class="p-0 m-0"><span id="totalItemsInCart"></span>  Total</p>
                 </div>
                 <div class="card-body">
                     <table class="table table-borderless">
                         <tr>
-                            <td><h5>Subtotal</h5></td>
-                            <td><h4>GHC 556</h4></td>
+                            <td><h6>Subtotal</h6></td>
+                            <td><h5>GH&#x20B5; <span id="subTotalHolder"></span></h5></td>
                         </tr>
                         <tr>
-                            <td><h5>Sale Tax</h5></td>
-                            <td><h4>GHC 00</h4></td>
+                            <td><h6>Sale Tax</h6></td>
+                            <td><h5 >GH&#x20B5; 0</h5></td>
                         </tr>
                         <tr>
-                            <td><h5>Estimated Total</h5></td>
-                            <td><h4>GHC 5546</h4></td>
+                            <td><h6>Estimated Total</h6></td>
+                            <td><h5 >GH&#x20B5; <span id="estimatedTotalHolder"></span></h5></td>
                         </tr>
                     </table>
 
                     <div class="my-5">
-                        <h4>Add a coupon</h4>
-                        <form class="form-inline">
+                        <h6>Add a coupon</h6>
+                        <div class="input-group">
 
-                            <div class="form-group mx-sm-3 mb-2">
-                                <label for="inputPassword2" class="sr-only">Password</label>
-                                <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+                            <label for="txtCoupon" class="sr-only">Password</label>
+                            <input type="password" class="form-control" id="txtCoupon" placeholder="code">
+                            <div class="input-group-prepend">
+                                <button onclick="addCoupon()" type="button" class="btn btn-primary mb-2">Add</button>
                             </div>
-                            <button type="submit" class="btn btn-primary mb-2">Add</button>
-                        </form>
+                            <div class="valid-feedback">
+                                Coupon Added
+                            </div>
+                            <div class="invalid-feedback">
+                                Invalid Coupon.
+                            </div>
+                        </div>
                     </div>
                     <a href="about.html" class="btn btn-primary btn-lg mt-5 mb-2 btn-block">Pay Now</a>
                 </div>
