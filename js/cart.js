@@ -47,7 +47,10 @@ function addCoupon(){
     reloadOrderTotal()
 }
 
-function validateCoupon(text){
+function validateCoupon(text = "sdfdsf"){
+    if (text.length !== 5){
+        return false;
+    }
     let re = /[A-Za-z0-9][A-Za-z0-9][A-Za-z0-9][A-Za-z0-9][A-Za-z0-9]/
     return re.test(text);
 }
