@@ -261,9 +261,14 @@ function loadCart() {
 }
 
 function init() {
+    let fresh = hasStoredData()
     loadProducts();
     loadCart();
     saveItemToStore(true, "loaded")
+    if (!fresh){
+        init()
+    }
+
 }
 
 function generateProductUrl(product) {
@@ -316,6 +321,7 @@ function removeItemFromCart(index) {
 $(() => {
 
     init();
+
     updateCartCount()
 })
 
