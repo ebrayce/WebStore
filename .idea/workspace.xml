@@ -20,7 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2389d962-2d95-4195-b9dd-c49e82403f29" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/js/cart.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/cart.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/about.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/product.html" beforeDir="false" afterPath="$PROJECT_DIR$/product.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,9 +55,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="add_unversioned_files" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../xampp/htdocs/Development/ftracker/FrontEnd" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/img" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\BRAYCE\Desktop\WebStore" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\BRAYCE\Desktop\WebStore\img" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -64,7 +76,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605877745745</updated>
       <workItem from="1605877759936" duration="11160000" />
-      <workItem from="1605948242075" duration="49468000" />
+      <workItem from="1605948242075" duration="50008000" />
+      <workItem from="1606012572502" duration="993000" />
     </task>
     <servers />
   </component>
@@ -81,6 +94,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="463" y="138" key="FileChooserDialogImpl" timestamp="1605888934952">
@@ -91,10 +105,10 @@
       <screen x="0" y="0" width="1366" height="768" />
     </state>
     <state x="0" y="0" width="999" height="755" key="dock-window-1/0.0.1366.768@0.0.1366.768" timestamp="1605957385047" />
-    <state x="605" y="49" width="585" height="706" key="find.popup" timestamp="1606008566391">
+    <state x="522" y="11" width="585" height="706" key="find.popup" timestamp="1606013286229">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
-    <state x="605" y="49" width="585" height="706" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1606008566391" />
+    <state x="522" y="11" width="585" height="706" key="find.popup/0.0.1366.768@0.0.1366.768" timestamp="1606013286229" />
     <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1605999997461">
       <screen x="0" y="0" width="1366" height="768" />
     </state>
