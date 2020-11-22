@@ -48,7 +48,6 @@ function addCoupon(){
 }
 
 function validateCoupon(text){
-    console.log("Txt",text)
     let re = /[A-Za-z0-9][A-Za-z0-9][A-Za-z0-9][A-Za-z0-9][A-Za-z0-9]/
     return re.test(text);
 }
